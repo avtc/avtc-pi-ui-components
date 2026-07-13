@@ -1,6 +1,6 @@
 {
   "name": "avtc-pi-ui-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A dialog coordinator for pi extensions that prevents dialogs from rendering over each other, plus a select-with-note component that wires subagent routing and notification.",
   "type": "module",
   "main": "./index.ts",
@@ -27,8 +27,7 @@
     "test:unit": "node scripts/test-low-priority.cjs vitest run",
     "test": "node scripts/test-low-priority.cjs \"node scripts/run-parallel.cjs \"npm run lint:optional-params :: npm run lint:bare-literals :: npm run lint:design-refs :: npm run lint:bundled-imports :: npm run lint:as-never :: npm run lint :: npm run typecheck :: npm run knip :: npm run dupes\" && vitest run\"",
     "dupes": "jscpd src/ --exit-code --threshold 0.01",
-    "lint:as-never": "node scripts/no-as-never.cjs src/ tests/ index.ts",
-    "prepublishOnly": "node scripts/check-symlinks.mjs"
+    "lint:as-never": "node scripts/no-as-never.cjs src/ tests/ index.ts"
   },
   "keywords": [
     "pi-package",
