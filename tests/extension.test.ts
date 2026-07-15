@@ -133,7 +133,7 @@ test("with source but no lastMessage: detail is just title (no newline)", async 
 
 describe("uiComponentsExtension entry (idempotent wiring)", () => {
   // The entry guards against double-registration via a globalThis flag so the
-  // package can be safely bundled into multiple consumers (feature-flow,
+  // package can be safely bundled into multiple consumers (featyard,
   // parallel-work-guardrail) — whichever loads first wires, the rest no-op.
   beforeEach(() => {
     delete (globalThis as { __avtcPiUiComponentsWired?: boolean }).__avtcPiUiComponentsWired;

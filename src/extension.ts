@@ -24,7 +24,7 @@ import { subscribeToNotificationApi, withAttention } from "./snippets/vendored/s
 import { type RootHandler, subscribeToUiBridge } from "./snippets/vendored/subscribe-to-subagent-ui-bridge.js";
 
 // Idempotent wiring guard. ui-components is bundled into multiple consumers
-// (feature-flow, parallel-work-guardrail). jiti's moduleCache:false gives each
+// (featyard, parallel-work-guardrail). jiti's moduleCache:false gives each
 // bundled copy a distinct module instance, but they share globalThis — so the
 // guard lives here, mirroring the pattern used by the vendored subscribe-to-*
 // snippets for shared state. Whichever consumer loads first wires once; the
