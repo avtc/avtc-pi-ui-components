@@ -1,13 +1,14 @@
 {
   "name": "avtc-pi-ui-components",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A dialog coordinator for pi extensions that prevents dialogs from rendering over each other, plus a select-with-note component that wires subagent routing and notification.",
   "type": "module",
   "main": "./index.ts",
   "pi": {
     "extensions": [
       "./index.ts"
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/avtc/avtc-pi-ui-components/main/assets/images/select-with-note.png"
   },
   "files": [
     "index.ts",
