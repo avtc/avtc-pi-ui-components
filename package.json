@@ -1,6 +1,6 @@
 {
   "name": "avtc-pi-ui-components",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A dialog coordinator for pi extensions that prevents dialogs from rendering over each other, plus a select-with-note component that wires subagent routing and notification.",
   "type": "module",
   "main": "./index.ts",
